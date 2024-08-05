@@ -1,0 +1,43 @@
+name: MythicLib
+author: Indyuce
+main: io.lumine.mythic.lib.MythicLib
+api-version: 1.13
+version: 1.6.1.1-Rebuild
+description: A hard dependency for the MMO plugins.
+softdepend: [ WorldGuard,Residence,Factions,MythicMobs,PlaceholderAPI ]
+depend: [ MineAhihiPlugin ]
+commands:
+  mythiclib:
+    description: MythicLib main command.
+    permission: mythiclib.reload
+    aliases: [ ml ]
+  healthscale:
+    description: Scales the player's health. Deprecated, use /ml debug healthscale
+    permission: mythiclib.command.healthscale
+  exploreattributes:
+    description: Explore player attributes. Deprecated, use /ml debug attributes
+    permission: mythiclib.explore-attributes
+  mmotempstat:
+    description: Add temporary stat modifier to player. Deprecated, use /ml statmod
+    permission: mythiclib.tempstat
+  superworkbench:
+    aliases: [ swb ]
+    description: Open the super 5x5 workbench
+    permission: mythiclib.superworkbench
+  megaworkbench:
+    aliases: [ mwb ]
+    description: Open the mega 6x6 workbench
+    permission: mythiclib.megaworkbench
+permissions:
+  mythiclib.admin:
+    default: op
+  mythiclib.explore-attributes:
+    default: op
+  mythiclib.mythiclib.command.healthscale:
+    default: op
+  mythiclib.tempstat:
+    default: op
+  mythiclib.superworkbench:
+    default: op
+  mythiclib.megaworkbench:
+    default: op
